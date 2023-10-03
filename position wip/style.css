@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.boxes{
+    background-color: azure;
+    border: 1px solid;
+    width: 60%;
+    height: 50vh;
+    position: relative;
+}
+.box{
+    width: 40px;
+    height: 40px;
+    background-color: aqua;
+    border: 1px solid white;
+}
+.brownbox{
+    background-color: brown;   
+}
+.orangebox{
+    background-color: rgba(255, 115, 0,0.5);
+}
+
+.yellowbox{
+background-color: yellow;
+position: relative;
+
+}
+
+.redbox{
+    background-color: rgb(179, 0, 0);
+    position: sticky;
+    top: 0;
+    left: 100%;
+}
+.greenbox{
+background-color: darkolivegreen;
+}
+.pinkbox{
+    background-color: crimson;
+    position: fixed;
+    right: 0;
+}
+section{
+    height: 100vh;
+}

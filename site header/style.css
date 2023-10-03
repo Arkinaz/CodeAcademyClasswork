@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  outline: none;
+  text-decoration: none;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+header {
+  background-color: #20484f;
+  position: fixed;
+  width: 100%;
+}
+header .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+
+header .header ul {
+  display: flex;
+  column-gap: 20px;
+}
+header .header a,
+.header .logo-part,
+.fa-bars {
+  color: white;
+}
+.buttons {
+  display: flex;
+  column-gap: 5px;
+}
+.buttons .sign-up,.email .sign-up {
+  background-color: #b8e4da;
+  color: #20484f;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+}
+.buttons .login {
+  background-color: transparent;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+}
+.header .fa-bars {
+  display: none;
+}
+#welcoming {
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center; 
+}
+.welcoming{
+    padding-top: 200px;
+}
+.welcome-text{
+    padding: 10px 0;
+    color: #072125;
+    font-size: 3rem;
+}
+.front-text .welcome-text-2{
+    color: #20484F;
+    font-weight: 200;
+}
+input{
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px solid  #20484F;
+    font-size: larger
+}
+input::placeholder{
+    color: #20484F;
+    opacity: 0.3;
+}
+.email{
+    position: relative;
+    display: inline-block;
+    top: 20px;
+}
+.email .sign-up{
+    position: absolute;
+    right: 0;
+    top: 0;
+    border: 1px solid ;
+    border-left: none;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    height: 100%;
+    width: 30%;
+    font-size: 20px;
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    padding: 0 5%;
+  }
+}
+@media screen and (max-width: 991px) {
+}
+
+@media screen and (max-width: 767px) {
+  .header .fa-bars {
+    display: block;
+  }
+  .navigation {
+    display: none;
+  }
+  .buttons {
+    display: none;
+  }
+}

@@ -42,16 +42,18 @@
   padding: 10px;
   font-size: small;
 }
-
-@media screen and (max-width: 993) {
-  .container {
-    padding: 0 5%;
+@media only screen and (max-width: 1179px) {
+  .profil-part .profil {
+    width: 30%;
   }
-  .profil-part {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 20px;
+}
+@media only screen and (max-width: 768px) {
+  .profil-part .profil {
+    width: 40%;
+  }
+}
+@media only screen and (max-width: 409px) {
+  .profil-part .profil {
+    width: 80%;
   }
 }

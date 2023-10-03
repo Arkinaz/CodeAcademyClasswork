@@ -8,20 +8,27 @@
 .cont{
     max-width: 1200px;
     margin: 0 auto;
+   
 }
 #furniture{
     background-image: url(./image\ 3.svg);
     background-size: cover;
+   
+}
+.header{
+ 
 }
 header{
     display: flex ;
     justify-content: space-between;
     padding: 20px;
     color: white;
-    position: fixed;
-    width: 100%;
 }
 
+header{
+    position: sticky;
+    width: 100%;
+}
 header .navigation ul {
     display:flex ;
     gap: 40px;
@@ -40,4 +47,7 @@ header .navigation ul {
 #main{
     padding-top: 50px;
     height: 100vh;
+}#hovers{
+    height: 100vh;
+    background-color: gray;
 }

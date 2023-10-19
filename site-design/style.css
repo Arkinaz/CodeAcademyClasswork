@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    outline: none;
+}
+.cont{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+#furniture{
+    background-image: url(./image\ 3.svg);
+    background-size: cover;
+}
+header{
+    display: flex ;
+    justify-content: space-between;
+    padding: 20px;
+    color: white;
+    position: fixed;
+    width: 100%;
+}
+
+header .navigation ul {
+    display:flex ;
+    gap: 40px;
+}
+
+.navigation select{
+    border: none;
+    background-color: transparent;
+    color: white;
+}
+
+.navigation a{
+    color: white;
+}
+
+#main{
+    padding-top: 50px;
+    height: 100vh;
+}

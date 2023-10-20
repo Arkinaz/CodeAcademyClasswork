@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+    background-color: brown;
+}
+.section {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  color: burlywood;
+  height: 100vh;
+}
+.boxes{
+    display: flex;
+    gap: 25px;
+}
+.label {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  color: burlywood;
+}
+.label i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90px;
+  height: 90px;
+  font-size: 2rem;
+  color: darkcyan;
+  background-color: white;
+  border-radius: 10px;
+}
+
+
+.label i:hover{
+    transform: rotate(360deg);
+    transition: 1s;
+    border-radius: 50%;
+}
+

@@ -1,0 +1,17 @@
+%primary-button{
+    width: 200px;
+    height: 50px;
+    color: $color-third;
+    background-color: $color-secondary;
+    border-radius: 5px;
+    font-size: 2rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: none;
+
+    &:hover{
+        background-color: rgb(255, 134, 134);
+        transition: 0.5s;
+        transform: scale(1.1);
+    }
+}

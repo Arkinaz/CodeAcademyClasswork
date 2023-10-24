@@ -1,0 +1,19 @@
+header {
+  background-color: $color-white;
+  .header {
+    @include display(space-between);
+    .left{
+        @include display();
+        gap: 80px
+    }
+    nav{
+        ul{
+            @include display();
+            gap: 30px;
+            a{
+                color: $color-grey;
+            }
+        }
+    }
+  }
+}

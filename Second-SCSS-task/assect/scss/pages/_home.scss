@@ -1,1 +1,90 @@
-a
+#home {
+  background-image: url(./images/cover.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  .home {
+    width: 50%;
+    padding: 100px 0;
+
+    h1 {
+      font-weight: 900;
+      line-height: 65px;
+      letter-spacing: 0.2px;
+      font-family: $martel;
+      color: $color-blue;
+    }
+    h4 {
+      font-weight: 500;
+      font-family: $Montserrat;
+      max-width: 500px;
+      line-height: 30px;
+      letter-spacing: 0.2px;
+      color: $color-grey;
+      padding: 40px 0;
+    }
+    .buttons {
+      @include display(left);
+      gap: 20px;
+      button {
+        @include button($color-brown, white);
+        border: 1px solid $color-brown;
+        transition: 1s;
+        &.button-1 {
+          @include button();
+        }
+
+        &:hover {
+          transform: scale(1.2);
+        }
+      }
+    }
+  }
+
+  .boxes {
+    @include display(left);
+    gap: 60px;
+    position: relative;
+    top: 120px;
+
+    .hover-boxes {
+      width: 328px;
+      height: 210px;
+      margin-bottom: 100px;
+      background-color: #fff;
+      transition: 1s;
+
+      .box {
+        padding: 35px 40px 35px 40px;
+        
+        h3 {
+          font-weight: 700;
+          padding: 15px 0;
+          font-family: $martel;
+          color: $color-blue;
+        }
+        p {
+        @extend %pfont;
+        text-align: start;
+        }
+      }
+
+      &.box-1 {
+        background-color: $color-teal;
+
+        .box {
+          h3 {
+            color: white;
+          }
+          p {
+            color: white;
+          }
+        }
+      }
+      &:hover {
+        box-shadow: 0px 13px 19px rgba($color: #000000, $alpha: 0.3);
+        transform: scale(1.1);
+      }
+    }
+  }
+}

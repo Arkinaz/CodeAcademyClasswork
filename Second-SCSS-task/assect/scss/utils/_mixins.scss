@@ -1,5 +1,17 @@
-@mixin display($a:center, $b:center) {
+@mixin display($a: center, $b: center) {
   display: flex;
   justify-content: $a;
   align-items: $b;
+}
+
+@mixin button($a: white, $b: $color-brown) {
+  font-size: 14px;
+  border-radius: 37px;
+  color: $a;
+  background-color: $b;
+  padding: 10px 36px 10px 36px;
+  height: 48px;
+  width: 182px;
+  border: none;
+  cursor: pointer;
 }

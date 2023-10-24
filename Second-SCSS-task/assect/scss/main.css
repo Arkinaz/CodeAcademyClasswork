@@ -67,6 +67,27 @@ table {
   }
 }
 
+#prompt .prompt .another-boxes .prompt-box h2, #prompt .prompt .heading-prompt h2 {
+  line-height: 50px;
+  letter-spacing: 0.2px;
+  font-family: "Martel", serif;
+  color: #252b42;
+  font-weight: 700;
+  padding: 10px;
+}
+
+#prompt .prompt .heading-prompt p, #home .boxes .hover-boxes .box p {
+  color: #737373;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+  font-weight: 400;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  max-width: 468px;
+  text-align: center;
+  padding: 20px 0;
+}
+
 h1 {
   font-size: 58px;
 }
@@ -107,6 +128,146 @@ header .header nav ul {
   align-items: center;
   gap: 30px;
 }
-header .header nav ul a {
+header .header nav ul li {
+  transition: 1s;
+}
+header .header nav ul li a {
   color: #737373;
+}
+header .header nav ul li:hover {
+  transform: scale(1.2);
+}
+
+#home {
+  background-image: url(./images/cover.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#home .home {
+  width: 50%;
+  padding: 100px 0;
+}
+#home .home h1 {
+  font-weight: 900;
+  line-height: 65px;
+  letter-spacing: 0.2px;
+  font-family: "Martel", serif;
+  color: #252b42;
+}
+#home .home h4 {
+  font-weight: 500;
+  font-family: "Montserrat", sans-serif;
+  max-width: 500px;
+  line-height: 30px;
+  letter-spacing: 0.2px;
+  color: #737373;
+  padding: 40px 0;
+}
+#home .home .buttons {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  gap: 20px;
+}
+#home .home .buttons button {
+  font-size: 14px;
+  border-radius: 37px;
+  color: #784f33;
+  background-color: white;
+  padding: 10px 36px 10px 36px;
+  height: 48px;
+  width: 182px;
+  border: none;
+  cursor: pointer;
+  border: 1px solid #784f33;
+  transition: 1s;
+}
+#home .home .buttons button.button-1 {
+  font-size: 14px;
+  border-radius: 37px;
+  color: white;
+  background-color: #784f33;
+  padding: 10px 36px 10px 36px;
+  height: 48px;
+  width: 182px;
+  border: none;
+  cursor: pointer;
+}
+#home .home .buttons button:hover {
+  transform: scale(1.2);
+}
+#home .boxes {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  gap: 60px;
+  position: relative;
+  top: 120px;
+}
+#home .boxes .hover-boxes {
+  width: 328px;
+  height: 210px;
+  margin-bottom: 100px;
+  background-color: #fff;
+  transition: 1s;
+}
+#home .boxes .hover-boxes .box {
+  padding: 35px 40px 35px 40px;
+}
+#home .boxes .hover-boxes .box h3 {
+  font-weight: 700;
+  padding: 15px 0;
+  font-family: "Martel", serif;
+  color: #252b42;
+}
+#home .boxes .hover-boxes .box p {
+  text-align: start;
+}
+#home .boxes .hover-boxes.box-1 {
+  background-color: #295c7a;
+}
+#home .boxes .hover-boxes.box-1 .box h3 {
+  color: white;
+}
+#home .boxes .hover-boxes.box-1 .box p {
+  color: white;
+}
+#home .boxes .hover-boxes:hover {
+  box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.3);
+  transform: scale(1.1);
+}
+
+#prompt {
+  padding: 300px 0;
+}
+#prompt .prompt .heading-prompt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#prompt .prompt .another-boxes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+#prompt .prompt .another-boxes .prompt-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 238px;
+  height: 202px;
+  transition: 1s;
+}
+#prompt .prompt .another-boxes .prompt-box h5 {
+  color: #737373;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+  font-weight: 400;
+}
+#prompt .prompt .another-boxes .prompt-box:hover {
+  box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.3);
 }/*# sourceMappingURL=main.css.map */

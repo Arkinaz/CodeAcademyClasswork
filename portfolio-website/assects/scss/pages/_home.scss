@@ -1,0 +1,92 @@
+#home {
+  background-color: $yellow;
+  .home {
+    .first {
+      nav {
+        ul {
+          @include display();
+          gap: 60px;
+          padding: 60px 0;
+          li {
+            a {
+              color: rgba($color: $dark, $alpha: 0.5);
+              &:hover span {
+                color: $dark;
+              }
+            }
+          }
+        }
+      }
+    }
+    .second {
+      .boxes {
+        @include display(space-between);
+        flex-wrap: wrap;
+
+        gap: 30px;
+      }
+      .box {
+        width: 30%;
+        transition: 1s;
+
+        position: relative;
+        width: 30%;
+
+        .image {
+          img {
+            width: 100%;
+          }
+        }
+        .text {
+          position: absolute;
+          bottom: 10%;
+          left: 10%;
+
+          p {
+            display: inline-block;
+            background-color: white;
+            border-radius: 20px;
+            padding: 10px;
+          }
+          h3 {
+            @extend %h3;
+            color: white;
+          }
+        }
+
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+    }
+    .third {
+      @include display();
+      padding: 90px 0;
+      button {
+        @extend %button;
+      }
+    }
+    .fourth {
+      @include display(space-between);
+      background-color: $orange;
+      padding: 50px 80px;
+      .left {
+        h2 {
+          @extend %h2;
+          color: white;
+          max-width: 368px
+        }
+        p {
+          @extend %p;
+          color: rgba($color: white, $alpha: 0.5);
+          text-align: start;
+          max-width: 470px;
+          padding: 40px 0;
+        }
+        button {
+          @extend %button;
+        }
+      }
+    }
+  }
+}

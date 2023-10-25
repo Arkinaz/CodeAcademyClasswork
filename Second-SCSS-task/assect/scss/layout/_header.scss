@@ -1,5 +1,8 @@
 header {
-  background-color: $color-white;
+  background-color: rgba($color: #ffffff, $alpha: 0.5);
+  position: fixed;
+  z-index: 1;
+  width: 100%;
   .header {
     @include display(space-between);
     .left {

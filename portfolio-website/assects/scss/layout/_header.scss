@@ -1,0 +1,50 @@
+header {
+  background-color: $blue;
+  .header {
+    @include display(space-between);
+    padding: 20px 0;
+    nav {
+      ul {
+        @include display();
+        gap: 60px;
+        li {
+          a {
+            color: white;
+            font-family: $font;
+            &:hover {
+              color: $orange;
+            }
+          }
+        }
+      }
+    }
+    button {
+      background-color: transparent;
+      color: white;
+      padding: 15px 30px;
+      border-radius: 10px;
+      transition: 0.5s;
+      border: 1px solid rgba($color: #ffffff, $alpha: 0.3);
+
+      &:hover {
+        background-color: white;
+        color: $blue;
+      }
+    }
+  }
+  .head {
+    padding: 60px 0;
+    @include display();
+    flex-direction: column;
+    h1 {
+      @extend %h1;
+      color: white;
+      padding-bottom: 20px;
+    }
+    p {
+      @extend %p;
+      color: rgba($color: #ffffff, $alpha: 0.6);
+      max-width: 570px;
+    }
+  }
+}

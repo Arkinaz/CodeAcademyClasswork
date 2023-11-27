@@ -27,4 +27,5 @@ form.addEventListener("submit", (e) => {
 
   arr.push(info);
   localStorage.setItem("users", JSON.stringify(arr));
+  allInputs.forEach((el) => (el.value = ""));
 });

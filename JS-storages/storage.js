@@ -12,20 +12,19 @@
 
 let form = document.querySelector("form");
 let allInputs = document.querySelectorAll("input");
-console.log(allInputs.value);
 
-let arr = JSON.parse(localStorage.getItem("arr")) || [];
-
-let info = {
-  id: Date.now(),
-  firstName: allInputs[0].value,
-  lastName: allInputs[1].value,
-  adress: allInputs[2].value,
-};
+let arr = JSON.parse(localStorage.getItem("users")) || [];
 
 form.addEventListener("submit", (e) => {
-  arr.push(info);
-  console.log(arr);
   e.preventDefault();
+
+  let info = {
+    id: Date.now(),
+    firstName: allInputs[0].value,
+    lastName: allInputs[1].value,
+    adress: allInputs[2].value,
+  };
+
+  arr.push(info);
   localStorage.setItem("users", JSON.stringify(arr));
 });
